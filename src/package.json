@@ -1,0 +1,19 @@
+{
+  "name": "messagepusher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-prod": "NODE_ENV=production npm install",
+    "build-zip": "npm run zip",
+    "zip": "rm -rf node_modules && npm run install-prod && zip -r function.zip ."
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.9.22",
+    "request": "^2.88.2",
+    "uuid": "^3.3.3"
+  }
+}
