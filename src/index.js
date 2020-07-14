@@ -60,6 +60,7 @@ const fc_trigger_update = async (creator, uuid, data) => {
     data.pushers.forEach(p => {
       if (p.url && p.body)
         pushers.push({
+          name: p.name || 'unknow',
           url: p.url,
           body: p.body
         })
@@ -77,6 +78,7 @@ const fc_trigger_create = async (creator, data) => {
   data.pushers.forEach(p => {
     if (p.url && p.body)
       pushers.push({
+        name: p.name || 'unknow',
         url: p.url,
         body: p.body
       })

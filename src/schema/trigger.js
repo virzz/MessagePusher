@@ -24,6 +24,9 @@ var TriggerSchema = new mongoose.Schema({
     type: String
   },
   pushers: [{
+    name: {
+      type: String
+    },
     url: {
       type: String
     },
